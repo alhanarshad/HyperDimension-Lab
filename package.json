@@ -1,0 +1,14 @@
+{
+  "name": "hyperdimension-lab",
+  "version": "1.0.0",
+  "description": "An interactive laboratory for geometry in three through six dimensions.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/*.test.js",
+    "check": "node --check src/app.js && node --check src/core/geometry.js && node --check src/core/math.js && node --check src/core/projection.js && node --check src/core/slice.js && node --check src/ui/renderer.js"
+  },
+  "license": "MIT",
+  "author": "Alhan Arshad"
+}

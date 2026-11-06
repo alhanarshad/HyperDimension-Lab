@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#080c15" />
+  <meta name="description" content="An interactive geometry laboratory for rotating, slicing and understanding objects in three through six dimensions. Made by Alhan." />
+  <title>HyperDimension Lab | Explore Beyond Three Dimensions</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="src/styles.css" />
+  <script type="module" src="src/app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="HyperDimension Lab home">
+        <span class="brand-symbol" aria-hidden="true">
+          <svg viewBox="0 0 44 44" fill="none"><path d="m22 3 16.45 9.5v19L22 41 5.55 31.5v-19L22 3Z" stroke="currentColor" stroke-width="1.5"/><path d="m22 12 8.66 5v10L22 32l-8.66-5V17L22 12ZM22 3v9M38.45 12.5l-7.79 4.5M38.45 31.5l-7.79-4.5M22 41v-9M5.55 31.5l7.79-4.5M5.55 12.5l7.79 4.5" stroke="currentColor" stroke-width="1.3" opacity=".75"/></svg>
+        </span>
+        <span class="brand-title">HYPER<span>DIMENSION</span><small>LABORATORY</small></span>
+      </a>
+      <div class="header-center"><span class="live-dot"></span><span>INTERACTIVE GEOMETRY STUDIO</span><span class="header-divider"></span><span class="muted">v1.0</span></div>
+      <div class="header-actions">
+        <span class="author-mark">Made by <strong>Alhan</strong></span>
+        <a class="github-link" href="https://github.com/alhanarshad/HyperDimension-Lab" target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12 .9C5.9.9 1 5.85 1 11.96c0 4.88 3.15 9.02 7.52 10.48.55.1.75-.24.75-.53 0-.26-.01-.96-.02-1.88-3.06.68-3.7-1.31-3.7-1.31-.5-1.27-1.23-1.61-1.23-1.61-1-.69.08-.68.08-.68 1.11.08 1.7 1.14 1.7 1.14.99 1.71 2.59 1.22 3.23.93.1-.72.39-1.22.7-1.5-2.44-.28-5.01-1.23-5.01-5.48 0-1.21.43-2.2 1.14-2.98-.12-.28-.5-1.4.11-2.91 0 0 .93-.3 3.04 1.13a10.54 10.54 0 0 1 5.54 0c2.11-1.43 3.04-1.13 3.04-1.13.6 1.51.22 2.63.11 2.91.71.78 1.13 1.77 1.13 2.98 0 4.26-2.57 5.2-5.02 5.47.4.34.75 1.02.75 2.05 0 1.48-.02 2.67-.02 3.03 0 .3.2.64.76.53A11.06 11.06 0 0 0 23 11.96C23 5.85 18.08.9 12 .9Z"/></svg>
+          <span>GitHub</span>
+          <svg viewBox="0 0 20 20" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 15 15 5M7 5h8v8"/></svg>
+        </a>
+      </div>
+    </header>
+
+    <div class="workspace">
+      <aside class="sidebar tools-sidebar" aria-label="Geometry controls">
+        <div class="sidebar-intro">
+          <div class="kicker"><span class="little-bar"></span> THE WORKSPACE <span class="index-label">01 / 04</span></div>
+          <h1>Shape the<br/><em>impossible.</em></h1>
+          <p>Explore geometry that goes beyond the space we know.</p>
+        </div>
+
+        <div class="control-section">
+          <div class="section-title"><span>01</span><h2>Dimensions</h2><span class="help-dot" title="Choose the number of independent coordinate axes">?</span></div>
+          <div class="dimension-selector" id="dimensionPicker" aria-label="Number of dimensions"></div>
+          <div class="selection-caption" id="dimensionCaption">A four-dimensional space</div>
+        </div>
+
+        <div class="control-section shape-section">
+          <div class="section-title"><span>02</span><h2>Geometry</h2></div>
+          <div class="shape-grid" id="shapeGrid"></div>
+        </div>
+
+        <div class="control-section rotation-section">
+          <div class="section-title"><span>03</span><h2>Rotation</h2><span class="count-label" id="rotationCount">6 planes</span></div>
+          <p class="field-label">Active rotation plane</p>
+          <div class="plane-list" id="planeList" aria-label="Rotation plane"></div>
+          <div class="slim-row"><label class="field-label" for="speedRange">Angular speed</label><output id="speedOutput">0.55×</output></div>
+          <input id="speedRange" type="range" min="0" max="2.5" step="0.05" value="0.55" />
+          <label class="switch-row"><span>Compound rotation<small>Also rotate in a second plane</small></span><input id="compoundToggle" type="checkbox" checked /><span class="switch-track"></span></label>
+        </div>
+
+        <div class="control-section projection-section">
+          <div class="section-title"><span>04</span><h2>Projection</h2></div>
+          <div class="segmented" id="projectionPicker" role="group" aria-label="Projection type">
+            <button type="button" class="segment active" data-projection="perspective">Perspective</button>
+            <button type="button" class="segment" data-projection="orthographic">Orthographic</button>
+          </div>
+          <div class="slim-row"><label class="field-label" for="depthRange">Projection distance</label><output id="depthOutput">3.4</output></div>
+          <input id="depthRange" type="range" min="2.4" max="7" step="0.1" value="3.4" />
+        </div>
+
+        <div class="control-section appearance-section">
+          <div class="section-title"><span>05</span><h2>Scene details</h2></div>
+          <div class="toggle-grid">
+            <label><input id="edgesToggle" type="checkbox" checked/> Edges</label>
+            <label><input id="verticesToggle" type="checkbox" checked/> Vertices</label>
+            <label><input id="axesToggle" type="checkbox"/> Axes</label>
+            <label><input id="labelsToggle" type="checkbox"/> Index labels</label>
+            <label><input id="glowToggle" type="checkbox" checked/> Glow</label>
+          </div>
+        </div>
+        <div class="sidebar-footer"><span class="footer-diamond">◇</span><span>Built to make the abstract tangible.</span></div>
+      </aside>
+
+      <main class="main-area" id="mainArea">
+        <div class="mode-navigation" role="tablist" aria-label="Workspace mode">
+          <button type="button" class="mode-tab active" data-mode="explorer" role="tab" aria-selected="true"><span class="tab-icon">◈</span> Explore</button>
+          <button type="button" class="mode-tab" data-mode="slice" role="tab" aria-selected="false"><span class="tab-icon">⊟</span> Slice</button>
+          <button type="button" class="mode-tab" data-mode="compare" role="tab" aria-selected="false"><span class="tab-icon">▧</span> Compare</button>
+          <button type="button" class="mode-tab" data-mode="learn" role="tab" aria-selected="false"><span class="tab-icon">◎</span> Learn</button>
+          <div class="tab-spacer"></div>
+          <span class="workspace-status"><span></span> LIVE VIEW</span>
+        </div>
+
+        <div class="scene-topline">
+          <div>
+            <div class="scene-kicker"><span class="mono">FIG. <span id="figureNumber">004</span></span><span class="slash">/</span><span id="sceneOverline">HYPERSPATIAL EXPLORATION</span></div>
+            <h2 id="sceneHeading">The Fourth Dimension<span class="heading-period">.</span></h2>
+            <p id="sceneSubtitle">A tesseract, seen through the limits of three-dimensional space.</p>
+          </div>
+          <div class="scene-toolbar">
+            <button id="playButton" class="icon-button primary-action" type="button" title="Pause animation (Space)" aria-label="Pause rotation"><span id="playSymbol">Ⅱ</span></button>
+            <button id="resetButton" class="icon-button" type="button" title="Reset scene (R)" aria-label="Reset scene">↺</button>
+            <button id="snapshotButton" class="icon-button" type="button" title="Save PNG image" aria-label="Save scene as image">▧</button>
+            <button id="shareButton" class="icon-button" type="button" title="Copy view link" aria-label="Copy a link to this view">↗</button>
+          </div>
+        </div>
+
+        <div class="stage" id="stage">
+          <canvas id="sceneCanvas" aria-label="Interactive projection of a higher-dimensional polytope. Drag to orbit, scroll to zoom." role="img"></canvas>
+          <div id="vertexTooltip" class="vertex-tooltip" hidden></div>
+          <div class="stage-top-left"><span class="signal-bars"><i></i><i></i><i></i></span><span>PROJECTION ENGINE</span></div>
+          <div class="stage-top-right"><span class="active-bullet"></span><span id="stageDimension">4D SPACE</span></div>
+          <div class="stage-crosshair crosshair-a"></div><div class="stage-crosshair crosshair-b"></div>
+          <div class="stage-instructions"><kbd>DRAG</kbd> orbit view <span class="separator-dot">·</span> <kbd>SCROLL</kbd> zoom <span class="separator-dot">·</span> <kbd>SPACE</kbd> pause</div>
+          <div id="sliceControls" class="stage-floating-panel" hidden>
+            <div class="floating-head"><span>SECTION PLANE</span><span class="plane-equation" id="planeEquation">W = 0.00</span></div>
+            <label for="sliceAxis" class="floating-label">Slice along axis</label>
+            <select id="sliceAxis" aria-label="Slice axis"></select>
+            <input type="range" id="sliceRange" min="-1.6" max="1.6" value="0" step="0.01" aria-label="Slice position" />
+            <div class="range-ends"><span>−1.60</span><button type="button" id="centerSlice">CENTER</button><span>+1.60</span></div>
+            <div class="section-result" id="sliceStats">8 section vertices · 12 edges</div>
+          </div>
+          <div id="lessonCard" class="stage-lesson" hidden>
+            <div class="lesson-eyebrow" id="lessonEyebrow">02 / BEYOND THE CUBE</div>
+            <h3 id="lessonTitle">Meet the tesseract.</h3>
+            <p id="lessonBody"></p>
+            <div class="lesson-callout" id="lessonTakeaway"></div>
+            <div class="lesson-footer"><span id="lessonCounter">02 OF 06</span><div><button type="button" id="previousLesson" class="step-btn" aria-label="Previous lesson">←</button><button type="button" id="nextLesson" class="step-btn" aria-label="Next lesson">→</button></div></div>
+          </div>
+        </div>
+
+        <div class="scene-bottom-bar"><div><span class="online-indicator"></span><span id="geometryLabel">TESSERACT</span><span class="bar-separator">/</span><span id="projectionLabel">PERSPECTIVE PROJECTION</span></div><div class="mono-detail"><span id="rendererStatus">CANVAS 2D</span><span class="bar-separator">·</span><span id="fpsCounter">60 FPS</span></div></div>
+
+        <div class="insight-area">
+          <div class="insight-index"><span>INSIGHT</span><strong id="insightNumber">01</strong></div>
+          <div class="insight-content"><h3 id="insightTitle">You're looking at a shadow of something larger.</h3><p id="insightText">We cannot look directly into four dimensions. This view reduces the geometry into three dimensions, then projects it onto your screen. Rotate it to reveal structure hidden from any single angle.</p></div>
+          <button class="insight-more" type="button" id="insightAction">Start learning <span>↗</span></button>
+        </div>
+      </main>
+
+      <aside class="sidebar inspector-sidebar" aria-label="Geometry information">
+        <div class="inspector-title"><div class="kicker"><span class="little-bar"></span> THE INSPECTOR <span class="index-label">02 / 04</span></div><h2>Object anatomy<span>.</span></h2><p>Every dimension has a structure.</p></div>
+        <div class="object-preview"><div class="preview-orbit preview-one"></div><div class="preview-orbit preview-two"></div><div class="preview-center"><span>n</span><span id="previewDimension">04</span></div><div class="preview-caption"><span id="objectTitle">TESSERACT</span><span class="preview-state">ACTIVE OBJECT</span></div></div>
+        <div class="anatomy-title"><h3 id="infoName">4D Hypercube</h3><p id="shapeDescription">The four-dimensional analogue of a cube.</p></div>
+        <div class="stats-grid"><div class="stat-card"><span>VERTICES</span><strong id="verticesCount">16</strong><small>0-dimensional points</small></div><div class="stat-card"><span>EDGES</span><strong id="edgesCount">32</strong><small>1-dimensional segments</small></div><div class="stat-card"><span>2D FACES</span><strong id="facesCount">24</strong><small>Polygonal surfaces</small></div><div class="stat-card"><span>ROTATION PLANES</span><strong id="planesCount">6</strong><small>Independent axes pairs</small></div></div>
+        <div class="inspector-block"><div class="block-heading"><span>THE MATHEMATICS</span><span class="tiny-outline">N DIMENSIONS</span></div><div class="formula" id="formula">V = 2<sup>n</sup></div><p id="formulaDescription">Every added dimension doubles the corners of a hypercube.</p></div>
+        <div class="inspector-block coordinate-block"><div class="block-heading"><span>COORDINATE SYSTEM</span><span class="tiny-outline">EUCLIDEAN</span></div><div class="coordinates" id="coordinateChips"><span>X</span><span>Y</span><span>Z</span><span>W</span></div><p id="coordinateDescription">Four perpendicular axes. The W axis is spatial, not time.</p></div>
+        <div class="inspector-block boundaries-block"><div class="block-heading"><span>UNDERSTANDING THE VIEW</span></div><p>A higher-dimensional object is not physically inside your screen. You are exploring a mathematically consistent lower-dimensional projection.</p></div>
+        <footer class="inspector-footer"><span>HYPERDIMENSION LAB</span><strong>Made by Alhan</strong><small>Open source · MIT License</small></footer>
+      </aside>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  </div>
+</body>
+</html>
