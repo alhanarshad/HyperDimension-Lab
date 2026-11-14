@@ -1,0 +1,10 @@
+﻿Key,Name,Type,Target Robux,World,Display,Description,Icon,Confirmed Roblox ID
+spark,Mini Spark Effect,Pass,1,1,Spark Atelier,Permanent amber star particles while running.,product-icons/spark.png,
+trail,Colorful Speed Trail,Pass,9,1,Trail Gallery,Permanent cyan-to-violet ribbon trail.,product-icons/trail.png,
+coins,Small Coin Pack,Product,24,2,Exchange,300 Coins delivered once per purchase. Buy again when you choose.,product-icons/coins.png,
+shoes,Neon Runner Shoes,Pass,59,2,Neon Outfitters,Permanent neon ankle lights for your runner.,product-icons/shoes.png,
+starter,Starter Cosmetic Bundle,Pass,150,3,Hidden Atelier,"Solar Ribbon trail, Victory Halo, and Aurora skin for Crystal Cub. Earn Crystal Cub in Crystal Canyon to use its skin.",product-icons/starter.png,
+energy,Permanent 2× Speed Energy,Pass,299,1,Velocity Lab,2× Speed Energy from running and spark pickups. Running uses the strongest applicable boost.,product-icons/energy.png,
+coinboost,Permanent 3× Coin Earnings,Pass,499,5,Ember Exchange,"3× Coins earned in the world, from races, and from claims. Purchased packs deliver their listed amount.",product-icons/coinboost.png,
+training,Permanent 4× Training Energy,Pass,1999,4,Cloud Customization,4× Speed Energy from running. The 4× rate takes priority when both running boosts apply.,product-icons/training.png,
+founder,Cosmic Founder's Bundle,Pass,3999,6,Founder's Observatory,"Eventide Ribbon trail, Rift Crown, and Eventide skin for Galaxy Wisp. Earn Galaxy Wisp in Cosmic Rift to use its skin.",product-icons/founder.png,

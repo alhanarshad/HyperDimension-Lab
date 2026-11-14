@@ -1,0 +1,74 @@
+[
+  {
+    "file": "spark_fox.glb",
+    "meshes": 16,
+    "triangles": 2040,
+    "largestMesh": 168
+  },
+  {
+    "file": "neon_gecko.glb",
+    "meshes": 14,
+    "triangles": 2028,
+    "largestMesh": 168
+  },
+  {
+    "file": "crystal_cub.glb",
+    "meshes": 15,
+    "triangles": 2360,
+    "largestMesh": 168
+  },
+  {
+    "file": "cloud_bunny.glb",
+    "meshes": 14,
+    "triangles": 2352,
+    "largestMesh": 168
+  },
+  {
+    "file": "thunder_owl.glb",
+    "meshes": 12,
+    "triangles": 2016,
+    "largestMesh": 168
+  },
+  {
+    "file": "mini_meteor.glb",
+    "meshes": 13,
+    "triangles": 1700,
+    "largestMesh": 168
+  },
+  {
+    "file": "lava_turtle.glb",
+    "meshes": 12,
+    "triangles": 1692,
+    "largestMesh": 168
+  },
+  {
+    "file": "galaxy_wisp.glb",
+    "meshes": 13,
+    "triangles": 2024,
+    "largestMesh": 168
+  },
+  {
+    "file": "valley_cabin.glb",
+    "meshes": 9,
+    "triangles": 108,
+    "largestMesh": 12
+  },
+  {
+    "file": "skyline_tower.glb",
+    "meshes": 13,
+    "triangles": 156,
+    "largestMesh": 12
+  },
+  {
+    "file": "amethyst_outcrop.glb",
+    "meshes": 7,
+    "triangles": 96,
+    "largestMesh": 24
+  },
+  {
+    "file": "veltrix_display.glb",
+    "meshes": 4,
+    "triangles": 96,
+    "largestMesh": 28
+  }
+]

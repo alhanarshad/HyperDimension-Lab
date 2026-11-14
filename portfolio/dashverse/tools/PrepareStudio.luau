@@ -1,0 +1,11 @@
+-- Paste into Studio's Command Bar in Edit mode when building from the portable place.
+assert(not game:GetService("RunService"):IsRunning(), "Stop the playtest first")
+local services = game:GetService("ServerScriptService")
+local folder = services:FindFirstChild("Dashverse")
+assert(folder and folder:FindFirstChild("World"), "Open the Dashverse place first")
+local world = require(folder.World)
+world.build()
+world.configure()
+world.ground()
+workspace.CurrentCamera.CFrame = CFrame.lookAt(Vector3.new(53, 42, 118), Vector3.new(0, 0, 13))
+print("Dashverse scenery is ready.")
