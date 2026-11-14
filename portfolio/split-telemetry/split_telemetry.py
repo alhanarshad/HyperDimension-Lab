@@ -55,8 +55,9 @@ def compare(reference, candidate, step):
     r0, c0 = crossing(reference, start), crossing(candidate, start)
     sectors = []
     prev_r, prev_c = r0, c0
-    for index in range(1, math.ceil(count) + 1):
-        distance = min(start + step * index, finish)
+    number_of_splits = max(1, math.ceil(count))
+    for index in range(1, number_of_splits + 1):
+        distance = finish if index == number_of_splits else min(start + step * index, finish)
         r, c = crossing(reference, distance), crossing(candidate, distance)
         sectors.append({"distance_m": round(distance, 5),
                         "reference_s": round(r - r0, 5), "candidate_s": round(c - c0, 5),

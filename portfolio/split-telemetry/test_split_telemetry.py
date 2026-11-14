@@ -30,3 +30,9 @@ class SplitTelemetryTests(unittest.TestCase):
             path.write_text("elapsed_s,distance_m\n0,0\n1,10\n2,5\n", encoding="utf-8")
             with self.assertRaisesRegex(ValueError, "distance cannot decrease"):
                 read_trace(path)
+
+    def test_extreme_interval_still_reports_finish(self):
+        distance = 1e-200
+        report = compare([(0, 0), (distance, 2)], [(0, 0), (distance, 3)], 1e200)
+        self.assertEqual(len(report["splits"]), 1)
+        self.assertEqual(report["delta_s"], 1)
