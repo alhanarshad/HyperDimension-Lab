@@ -183,8 +183,9 @@ def main():
     bpy.ops.object.camera_add(location=(52,-64,52))
     camera = bpy.context.object
     camera.name = "Diorama overview"
-    camera.data.type, camera.data.ortho_scale = "ORTHO", 82
+    camera.data.type, camera.data.ortho_scale = "ORTHO", 87
     aim(camera, (0,1.7,7.5))
+    camera.location.z += 2.5
     scene.camera = camera
     scene.render.engine = "CYCLES"
     scene.cycles.samples = 20
