@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Inspect the slope and elevation of a measured trail profile.">
+  <title>Trail Grade</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.mjs"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">ROUTE PROFILE</p>
+      <h1>Trail Grade</h1>
+      <p>Inspect climbs, descents, and steep sections in a measured elevation profile.</p>
+    </header>
+    <section class="workspace" aria-label="Trail analysis">
+      <form id="controls" class="controls">
+        <h2>Profile data</h2>
+        <label for="samples">Distance and elevation in meters</label>
+        <textarea id="samples" spellcheck="false" rows="14" aria-describedby="format"></textarea>
+        <p id="format">Use two comma-separated values per line. Distance must increase.</p>
+        <label for="threshold">Highlight grades at or above <output id="threshold-value">12%</output></label>
+        <input type="range" min="2" max="35" value="12" id="threshold">
+        <div class="actions"><button type="submit">Analyze</button><button type="button" id="example">Load example</button></div>
+        <p id="error" role="alert"></p>
+      </form>
+      <article class="results">
+        <div class="results-head"><h2>Elevation profile</h2><span class="legend">Steep section</span></div>
+        <canvas id="chart" width="840" height="320" aria-label="Elevation by distance. Steep sections are also listed in the table below."></canvas>
+        <dl class="metrics" aria-live="polite">
+          <div><dt>Distance</dt><dd id="distance">—</dd></div>
+          <div><dt>Ascent</dt><dd id="ascent">—</dd></div>
+          <div><dt>Descent</dt><dd id="descent">—</dd></div>
+          <div><dt>Steepest</dt><dd id="maximum">—</dd></div>
+        </dl>
+        <h3>Sections</h3>
+        <div class="table-scroll"><table><thead><tr><th scope="col">From</th><th scope="col">To</th><th scope="col">Grade</th><th scope="col">Change</th></tr></thead><tbody id="sections"></tbody></table></div>
+        <p class="footnote">Grades are averaged between samples. This profile does not capture surface conditions or obstacles.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

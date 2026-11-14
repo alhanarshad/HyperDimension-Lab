@@ -1,0 +1,10 @@
+{
+  "assets": [
+    {
+      "path": "marker.txt",
+      "origin": "original",
+      "sha256": "20b8f25ae0a65717e0f672d27e7dc8a312b88a923a8dd246d20e153946103d5d",
+      "license": "MIT"
+    }
+  ]
+}

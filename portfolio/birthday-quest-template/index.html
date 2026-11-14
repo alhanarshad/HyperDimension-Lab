@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Birthday Quest</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quest.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><h1>Birthday Quest</h1><p>Follow the clues and open a note at the end.</p></header>
+    <section class="card" aria-labelledby="quest-title">
+      <h2 id="quest-title">Find the stars</h2>
+      <p id="instruction">Select three different stars to unlock the riddle.</p>
+      <div id="stars" class="stars">
+        <button type="button" aria-label="Star one" aria-pressed="false">✧</button>
+        <button type="button" aria-label="Star two" aria-pressed="false">✧</button>
+        <button type="button" aria-label="Star three" aria-pressed="false">✧</button>
+        <button type="button" aria-label="Star four" aria-pressed="false">✧</button>
+        <button type="button" aria-label="Star five" aria-pressed="false">✧</button>
+      </div>
+      <form id="riddle" hidden>
+        <p>I get smaller as I give you light. What am I?</p>
+        <label for="answer">Answer</label>
+        <div class="answer"><input id="answer" autocomplete="off" required maxlength="60"><button>Check</button></div>
+      </form>
+      <div id="celebration" hidden tabindex="-1">
+        <p class="letter">Here’s to another year of good surprises, favorite songs, and people who are glad you’re here. Happy birthday!</p>
+      </div>
+      <p id="status" role="status"></p>
+      <button type="button" id="restart" class="quiet">Start over</button>
+    </section>
+  </main>
+</body>
+</html>
