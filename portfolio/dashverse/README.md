@@ -17,7 +17,7 @@ Open the saved Roblox place and press **Play** in Studio. Run down the lit arriv
 | `src/server/Races.luau` | Heats, countdowns, race corridors, checkpoints, finish timing, and standings |
 | `src/server/World.luau` | Deterministic world and terrain generator |
 | `src/client` | HUD, responsive menus, audio, and nearby companion effects |
-| `assets` | Editable Blender scene, GLBs, original audio, catalog icons, and catalog CSV |
+| `assets` | Editable Blender scene, catalog metadata, and generated release assets |
 
 A fresh place generated from source builds the districts automatically when you press Play. To materialize the scenery in that file’s Edit mode, run `tools/PrepareStudio.luau` in the Studio Command Bar and save the local copy.
 
@@ -32,4 +32,4 @@ To regenerate the source-built place, run `python tools/build_place.py Dashverse
 
 ## Assets
 
-The Studio build uses original Roblox primitives and Roblox-bundled UI and movement sounds. The asset folder includes eight creature sculpts, four environmental and display props, nine 512 × 512 shop icons, and seven original WAVs. The Blender exports use material colors and no external textures. The per-mesh triangle maximum in the exports is 168. The Blender and WAV files are ready for a separately approved import and moderation pass. [Roblox mesh specifications](https://create.roblox.com/docs/art/modeling/specifications), [Roblox audio assets](https://create.roblox.com/docs/audio/assets)
+The Studio build uses original Roblox primitives and Roblox-bundled UI and movement sounds. The editable Blender scene contains eight creature sculpts and four environmental and display props. The included generators produce the GLBs, nine 512 × 512 shop icons, and seven original WAVs. The Blender exports use material colors and no external textures. The per-mesh triangle maximum in the exports is 168. The Blender and WAV files are ready for a separately approved import and moderation pass. [Roblox mesh specifications](https://create.roblox.com/docs/art/modeling/specifications), [Roblox audio assets](https://create.roblox.com/docs/audio/assets)
