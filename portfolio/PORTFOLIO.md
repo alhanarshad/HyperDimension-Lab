@@ -12,3 +12,14 @@
 | [Birthday Quest](birthday-quest-template/) | Generic celebration page with a playable star quest and riddle | Open `index.html` |
 
 [HyperDimension Lab](../) is the geometry project at this repository root.
+
+## Existing projects
+
+| Project | Public snapshot |
+| --- | --- |
+| [Veltrix Client](veltrix-client/) | Independent Minecraft launcher and Fabric client source |
+| [Project Driveline](project-driveline/) | Roblox driving simulator source with fictional vehicle names |
+| [Dashverse](dashverse/) | Roblox racing and creature collection project source and original asset generators |
+| [4D Desktop Explorer](hyperdimension-desktop/) | Offline Windows companion to HyperDimension Lab |
+| [Thunderlands](thunderlands/) | Fabric server dependency setup and sanitized sample configuration |
+| [Everest](everest/) | Minecraft development datapack with a lodge, trails, farms, and fortress |

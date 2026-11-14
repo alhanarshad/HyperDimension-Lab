@@ -1,0 +1,154 @@
+[
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "datapack"
+    ],
+    "environment": "unknown",
+    "id": "fQwTBBdJ",
+    "project_id": "1NnAVIR5",
+    "author_id": "ILbNQmxx",
+    "featured": false,
+    "name": "JJThunder To The Max v0.6.0 for 1.21.0 and 1.21.1",
+    "version_number": "0.6.0",
+    "changelog": "Underlands 2.0:\n- Explore the underlands with 500 block tall caves.\n- Found deep under the highest mountains\n- Cave systems grow larger faster than ever before until you reach the underlands\n- Ancient Cities rarity have been drastically reduced and will interfere with generated terrain much less often.\n\nImproved Rivers:\n- Rivers are much wider\n- Transitions are much smoother\n\nReworked Cave Entrances:\n- Are much simpler now that they carve more vertically and less randomly",
+    "changelog_url": null,
+    "date_published": "2025-07-27T18:37:07.363292Z",
+    "downloads": 143138,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "EIrXAcnK",
+        "hashes": {
+          "sha512": "4fc65fab1df943d06510866e85dac6879039b6f0fd262381720134d34273cd799345cb92bf568a856ce46e1642916716e7d5b6983d63ae52e409835aad60f36f",
+          "sha1": "357da1dc94cc1f03d5ed915085d9433d1c26cb35"
+        },
+        "url": "https://cdn.modrinth.com/data/1NnAVIR5/versions/fQwTBBdJ/JJThunder_To_The_Max_1.21.0_1.21.1_v0.6.0.zip",
+        "filename": "JJThunder_To_The_Max_1.21.0_1.21.1_v0.6.0.zip",
+        "primary": true,
+        "size": 156552,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "datapack"
+    ],
+    "environment": "unknown",
+    "id": "GcR4doMx",
+    "project_id": "1NnAVIR5",
+    "author_id": "ILbNQmxx",
+    "featured": false,
+    "name": "JJThunder To The Max v0.5.0 for 1.21.0 and 1.21.1",
+    "version_number": "0.5.0",
+    "changelog": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube-nocookie.com/embed/Wsz6cw2SFPM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>\n\n# Introduction:\nIn v0.3.0, JJThunder to the Max was featured in an Asian Half Squat Video, and was ready to get very popular at that time, however the mountains vere very bubbly-like and weren't as fractured-like terrain as they seem to be. \n\nv0.4.0 tried to fix this issue by implemeting a formula to the combined perlin-noise to implement this change, however, things wen't really wrong as it missed the whole mark:\n\n- Highland mountains seemed to be very over jagged-like, and didn't seem fun to look at. As the wavelength between mountains were very small and numerous peaks were found within a short distance.\n- Cave entrances were introduced, but they obviously destroyed the terrain surface, as they were very numerous and large.\n- Overall, it felt like the terrain was amplified more than realistic.\n\nv0.5.0 comes and fixes all the issues in v0.4.0, while trying to tackle the ultimate goal in creating a fractured-like terrain that seems are realistic as possible,\n\n# Changes:\n- Increased wavelength betweem mountain peaks.\n- Slightly reduced jaggedness in upper half of mountain shapes, while slightly increasing jaggedness in lower half of mountain shapes.\n- Reduced the frequency and rarity of 2000 tall mountains, so you no longer get an infinite range of them.\n- Cave entrances still exists, but drastically reduced.\n- Hills, Plains, Rivers, Oceans, and Caves remain the same as previous version.\n\n# Conclusion:\n\nWe have almost come to achieve our dream with this version, and if things turn out really well, then I will shift my focus into supporting more versions, and try implementing compatibilities with other mods.",
+    "changelog_url": null,
+    "date_published": "2025-01-11T10:42:24.515193Z",
+    "downloads": 56269,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "DOndQ0AQ",
+        "hashes": {
+          "sha512": "76c753f11bbd31c1f11be9369a011fcfaaa9da19d75f3ec87d15d09ea4f7fd3de008ee6687d362cbf224cb65939713a227e2ca831b1860c872c5e3b2eee7cb3b",
+          "sha1": "2cd3d6cfc8393178e4ea3876aafdada01f45caf3"
+        },
+        "url": "https://cdn.modrinth.com/data/1NnAVIR5/versions/GcR4doMx/JJThunder_To_The_Max_1.21.0-1.21.1_v0.5.0.zip",
+        "filename": "JJThunder_To_The_Max_1.21.0-1.21.1_v0.5.0.zip",
+        "primary": true,
+        "size": 156870,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "datapack"
+    ],
+    "environment": "unknown",
+    "id": "dSJDosLv",
+    "project_id": "1NnAVIR5",
+    "author_id": "ILbNQmxx",
+    "featured": false,
+    "name": "JJThunder To The Max v0.4.0 for 1.21.0 and 1.21.1",
+    "version_number": "0.4.0",
+    "changelog": "# Youtube Video:\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube-nocookie.com/embed/2jvhAok9On4\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>\n\n# Big Changes:\n\n- Facelifted Mountains\n- Reworked Slope Layout\n- Added Cave Openings or Cracks to Surface\n- Improved Biome Transitions\n- Increased max peak height from y=1800 to y=1900\n- Improved River formation\n\n# Detailed Summary\n\n- Tired of bubbly looking mountains, this update improves mountain generation from being a sum of perlin noises, into a more complicated arithmetics that takes in a perlin noise and yields a more realistic eroded-like looking mountains.\n\n- Slope layout has been reworked in a way to output a more random and immersive looking layout. No longer you will find mountains layed out in a boring straight line, but rather give more variety to how they generate.\n\n- Ever felt that caves and surfaces have been disconnected from each other and feel like 2 separate dimensions? Cave openings have been added to surface to spice up survival gameplay, and to give some cool looking overhang generation that leads you to the caves that you have all been looking for, without having to manually dig straight down to find them. \n\n- Biome transitions have been improved to feel more spread out and should give you a smoother transition when traversing from 1 biome to another. However, not much has been changed to the code logic, but rather the numbers inside the code have been tweaked.\n\n- In v0.3.0, mountains have barely touched y=1800 despite the description calling for a 2000 peak altitude mountains. v0.4.0 closer achieves our dream by making mountains easily reachable to y=1900, making the difference between the dream and reality even smaller than before.\n\n- River formation have been tweaked to match the new slope layout, while integrating cave cracks for a better feel. Keep in mind that rivers have not been drastically changed, since plains and ocean formation and layout has not been altered.\n\n",
+    "changelog_url": null,
+    "date_published": "2024-11-10T12:45:30.858383Z",
+    "downloads": 22277,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "jjoAb6ou",
+        "hashes": {
+          "sha512": "562e8064bf2aac9c621f25868b67ea8e73b88f562b7b811614d3f795630595e0089fdb2a234e7a03268c4503a96c1140b36807febb0b00031da81432050c2355",
+          "sha1": "7a1552fc828f9e8962b343c96caccca65b94637e"
+        },
+        "url": "https://cdn.modrinth.com/data/1NnAVIR5/versions/dSJDosLv/JJThunder_To_The_Max_1.21.0-1.21.1_v0.4.0.zip",
+        "filename": "JJThunder_To_The_Max_1.21.0-1.21.1_v0.4.0.zip",
+        "primary": true,
+        "size": 158275,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "datapack"
+    ],
+    "environment": "unknown",
+    "id": "2jgA0Tnz",
+    "project_id": "1NnAVIR5",
+    "author_id": "ILbNQmxx",
+    "featured": false,
+    "name": "JJThunder To The Max v0.3.0 for 1.21.0 and 1.21.1",
+    "version_number": "0.3.0",
+    "changelog": "- Added rivers\n- Fixed and smoothened out biome transitioning.\n- Slighly altered terrain layering between different slopes (lowlands vs mountains), which now occupies larger areas\n- Limited deserts to lowlands only.",
+    "changelog_url": null,
+    "date_published": "2024-07-21T09:50:49.602777Z",
+    "downloads": 24186,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "loZLNJqB",
+        "hashes": {
+          "sha1": "8f292f9015e52fa8fd7d1266ea30860185124480",
+          "sha512": "efda69d7ac8943807acf8e16c0dbe5b610882b55948c5e5cc04e606df35cb73220f8f51f7b0ffb1f26e4bdb974e72488d67a25a823ffe3d5e6c113a368eb8867"
+        },
+        "url": "https://cdn.modrinth.com/data/1NnAVIR5/versions/2jgA0Tnz/JJThunder_To_The_Max_1.21.0_v0.3.0.zip",
+        "filename": "JJThunder_To_The_Max_1.21.0_v0.3.0.zip",
+        "primary": true,
+        "size": 103057,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  }
+]
