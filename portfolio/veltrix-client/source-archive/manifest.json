@@ -1,0 +1,81 @@
+{
+  "bytes": 6094718,
+  "sha256": "9c6c18fb3a18832b462438efca138b1fc1f65f8e9f87a53faf49b51ca230e772",
+  "pieces": [
+    {
+      "file": "source-01.part",
+      "bytes": 420000,
+      "sha256": "7eca94f200f2b9faca5fca785005f215add5f8dc5185c6348b186464c48bae67"
+    },
+    {
+      "file": "source-02.part",
+      "bytes": 420000,
+      "sha256": "59359d9992d27ef8a5b9517e8b638b8e0b66e0f1934e7229cdc2a46495d8cd71"
+    },
+    {
+      "file": "source-03.part",
+      "bytes": 420000,
+      "sha256": "d9b4f9ac8de472462b8b1de24aa4c4e93d276c19f3e0da0104c56a40b4fb8761"
+    },
+    {
+      "file": "source-04.part",
+      "bytes": 420000,
+      "sha256": "c9d5112582bec568276c4648f1e2dc1cc4b6729d2d2a561321ae4eb1566c817e"
+    },
+    {
+      "file": "source-05.part",
+      "bytes": 420000,
+      "sha256": "0c266e2ad5aaf5937dfeb4221f99b32c15663fee17f6202dada99aaded49b294"
+    },
+    {
+      "file": "source-06.part",
+      "bytes": 420000,
+      "sha256": "028a967e1f7a799b2ede58b25dba9fc4c9e0b8f2a9f239c77926b5c397c971a3"
+    },
+    {
+      "file": "source-07.part",
+      "bytes": 420000,
+      "sha256": "f76de1413cfa0636fc17644a1993137bddbbd11249eeb986bfbbdf11c6d18f6b"
+    },
+    {
+      "file": "source-08.part",
+      "bytes": 420000,
+      "sha256": "1c97d08d12d762050b03236ad738a6a5e3c6c2744dfad41841b4be651349cbec"
+    },
+    {
+      "file": "source-09.part",
+      "bytes": 420000,
+      "sha256": "f6f0556c0d3fb456e18f869951f9d1abe0071046eb93ed6a3d94f0e09a1a5f2b"
+    },
+    {
+      "file": "source-10.part",
+      "bytes": 420000,
+      "sha256": "bec63bd0358e393d996b53193f7bdee4d11bcbcb0a76f866af3ad3f27857c37d"
+    },
+    {
+      "file": "source-11.part",
+      "bytes": 420000,
+      "sha256": "2ca0b72025553db304e8a5b0e6c858083158dff6f9e5126e15f32b64990dc03e"
+    },
+    {
+      "file": "source-12.part",
+      "bytes": 420000,
+      "sha256": "8f6ae4bf886d137708c295e3cc8869f7054c2ab060c0d222d1878bc73e08bfa0"
+    },
+    {
+      "file": "source-13.part",
+      "bytes": 420000,
+      "sha256": "e352b1b14698a98e0bdd8b57ba353f4acbd6085ea0f21082db6d72e159ca3fd1"
+    },
+    {
+      "file": "source-14.part",
+      "bytes": 420000,
+      "sha256": "cd3d83bcd646a9fe1fe34c8dc103e17b86ffe75dfa8c05c24e4fc62a2f3265f0"
+    },
+    {
+      "file": "source-15.part",
+      "bytes": 214718,
+      "sha256": "3bfe4ca9b70503be3ba4ff32b9d151bc6714a1d227b2056ec30d644bcfbf803f"
+    }
+  ]
+}
