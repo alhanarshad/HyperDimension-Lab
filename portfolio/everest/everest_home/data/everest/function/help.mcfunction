@@ -1,0 +1,1 @@
+tellraw @s {"text":"EVEREST | /function everest:home | /function everest:fortress. Explore mountain villages and forests beyond the citadel. World boundary: 30,000 blocks. Terrain saves as you explore.","color":"aqua"}
